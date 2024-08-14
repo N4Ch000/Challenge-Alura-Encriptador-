@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Logo.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="zona" >
+            <textarea class="palabra" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="advertencia">
+                <img class="bi" src="/exclamacion.svg">
+                <h6 class="info"></h6>
+            </div>
+            <div class="botones">
+                <button class="btnencriptar" id="btnencriptar" onclick="btnEncriptar();"></button>
+                <button class="btndesencriptar" id="btndesencriptar" onclick="btnDesencriptar();"></button>
+            </div>
+        </section>
+        <section class="area">
+            <div class="textos hidden">
+                <textarea class="resultado"cols="30" rows="5"></textarea>
+            </div>
+            <div class="imagen">
+                <img class="muñeco" src="/Muñeco.png" alt="Nuñeco de Alura" id="imagenMuñeco">
+            </div>
+            <div class="mensajes">
+                <h2 class="alerta"></h2>
+                <p class="mensaje"></p>
+            </div>
+            <div class="btncop">
+                <button class="btncopiar hidden" id="btncopiar" onclick="btnCopiar();"></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="creditos" id="creditos"></p>
+    </footer> 
+    <script src="scrip.js"></script>
+</body>
+</html>
